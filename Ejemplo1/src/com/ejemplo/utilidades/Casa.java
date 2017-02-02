@@ -3,6 +3,7 @@ package com.ejemplo.utilidades;
 import java.util.Scanner;
 
 import com.ejemplo.operaciones.*;
+import com.ejemplo.textos.*;
 
 public class Casa {
 
@@ -10,6 +11,8 @@ public class Casa {
 	
 		int variable1;
 		int variable2;
+		String cadena1="Mi nombre es Lety";
+		int longitud=0;
 		
 		Scanner leer = new Scanner(System.in);
 		
@@ -22,6 +25,10 @@ public class Casa {
 		
 		//int resultado = variable1+variable2;
 		//System.out.println("Resultado es igual a " + resultado);
+		
+		Funciones laLongitud = new Funciones(cadena1,longitud);
+		System.out.println("\nEl tamaño de la cadena1 es " + laLongitud.tamaño());
+		
 		OperacionesBasicas calculadora= new OperacionesBasicas(variable1,variable2);
 		System.out.println("La suma es "+ calculadora.sumar());
 		System.out.println("La resta es " + calculadora.restar());
